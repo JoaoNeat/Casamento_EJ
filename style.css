@@ -1,0 +1,100 @@
+body {
+    background-color: #0b0d17;
+    color: #ffd700;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container { max-width: 600px; margin: auto; }
+
+/* Estilo do Card (Presentes e Player) */
+.presente, .player-container {
+    border: 2px solid #ffd700;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+}
+
+.player-container {
+    max-width: 500px;
+    margin: 30px auto; /* Afastado de tudo */
+}
+
+img { width: 100%; border-radius: 10px; margin-bottom: 10px; }
+
+button {
+    background-color: #ffd700;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover { background-color: #e6c200; transform: scale(1.05); }
+
+/* Estilo do Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.modal-conteudo {
+    background-color: #0b0d17;
+    margin: 15% auto;
+    padding: 30px;
+    border: 2px solid #ffd700;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    color: #ffd700;
+}
+
+.fechar {
+    color: #ffd700;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+/* Container que cria a profundidade 3D */
+.star-wars-container {
+    height: 250px; /* Altura da janela do crawl */
+    perspective: 500px; /* Define o ponto de fuga (o quanto o texto "inclina") */
+    overflow: hidden;
+    background: #0b0d17;
+    margin: 20px auto;
+    border: 2px solid #ffd700;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* O texto que sobe */
+.crawl-text {
+    color: #ffd700;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 100%; /* Começa fora da tela, embaixo */
+    transform-origin: 50% 100%;
+    transform: rotateX(20deg) translateY(0);
+    animation: crawl 30s linear infinite; /* Tempo do scroll */
+    padding: 20px;
+}
+
+@keyframes crawl {
+    0% { transform: rotateX(20deg) translateY(0); }
+    100% { transform: rotateX(20deg) translateY(-100%); }
+}
