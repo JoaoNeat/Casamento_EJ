@@ -45,7 +45,7 @@ body {
    ESTILO DOS CARDS (Presentes e Player de Música)
    ========================================================================== */
 .presente, .player-container {
-    border: 2px solid #ffd700;                /* Borda amarela fina ao redor do card */
+    border: 2px solid #67061D;                /* Borda amarela fina ao redor do card */
     padding: 20px;                            /* Espaço interno entre a borda e o conteúdo */
     margin-bottom: 25px;                      /* Espaço vazio abaixo de cada card */
     border-radius: 15px;                      /* Deixa as pontas do card arredondadas */
@@ -70,7 +70,7 @@ img {
    BOTÕES (Interação)
    ========================================================================== */
 button {
-    background-color: #ffd700; /* Cor de fundo amarela */
+    background-color: #FFFAFA; /* Cor de fundo amarela */
     border: none;              /* Remove a borda padrão feia do navegador */
     padding: 12px 25px;        /* Espaçamento interno (tamanho do botão) */
     font-weight: bold;         /* Texto em negrito */
@@ -82,7 +82,7 @@ button {
 
 /* Efeito ao passar o mouse por cima do botão */
 button:hover { 
-    background-color: #e6c200; /* Escurece levemente o tom do amarelo */
+    background-color: #67061D; /* Escurece levemente o tom do amarelo */
     transform: scale(1.05);    /* Aumenta o tamanho do botão em 5% (efeito de foco) */
 }
 
@@ -106,17 +106,17 @@ button:hover {
     background-color: #0b0d17;  /* Fundo escuro igual ao do site */
     margin: 15% auto;           /* Empurra a caixa para baixo e centraliza nas laterais */
     padding: 30px;              /* Espaço interno para respirar o texto */
-    border: 2px solid #ffd700;  /* Borda amarela */
+    border: 2px solid #67061D;  /* Borda amarela */
     width: 80%;                 /* Largura adaptável para celulares */
     max-width: 400px;           /* Não passa de 400px em telas grandes */
     border-radius: 15px;        /* Cantos arredondados */
     text-align: center;         /* Centraliza o texto interno */
-    color: #ffd700;             /* Texto em amarelo */
+    color: #FFFAFA;             /* Texto em amarelo */
 }
 
 /* Botão de fechar (o "X") do modal */
 .fechar {
-    color: #ffd700;             /* "X" em amarelo */
+    color: #67061D;             /* "X" em amarelo */
     float: right;               /* Joga o "X" para o canto superior direito da caixinha */
     font-size: 28px;            /* Deixa o "X" grande */
     cursor: pointer;            /* Mãozinha ao passar o mouse */
@@ -132,14 +132,14 @@ button:hover {
     overflow: hidden;           /* Esconde o texto que sair para fora dessa caixinha de 250px */
     background: #0b0d17;        /* Fundo escuro interno */
     margin: 20px auto;          /* Espaçamento externo e centralização */
-    border: 2px solid #ffd700;  /* Borda amarela */
+    border: 2px solid #67061D;  /* Borda amarela */
     border-radius: 15px;        /* Cantos arredondados */
     position: relative;         /* Necessário para que o posicionamento do texto funcione corretamente */
 }
 
 /* O bloco de texto propriamente dito que vai subir */
 .crawl-text {
-    color: #ffd700;             /* Texto amarelo clássico do filme */
+    color: #FFFAFA;             /* Texto amarelo clássico do filme */
     font-size: 20px;
     font-weight: bold;
     text-align: center;
