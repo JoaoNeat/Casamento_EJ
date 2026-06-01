@@ -21,7 +21,7 @@ body {
     background-color: #0b0d17; 
     
     /* Cor padrão do texto (Amarelo Ouro) */
-    color: #ffd700;
+    color: #FFFAFA;
     
     /* Fonte do site (usa 'Segoe UI' se o usuário tiver, se não, usa qualquer fonte sem serifa do sistema) */
     font-family: 'Segoe UI', sans-serif;
@@ -116,7 +116,7 @@ button:hover {
 
 /* Botão de fechar (o "X") do modal */
 .fechar {
-    color: #67061D;             /* "X" em amarelo */
+    color: #FFFAFA;             /* "X" em amarelo */
     float: right;               /* Joga o "X" para o canto superior direito da caixinha */
     font-size: 28px;            /* Deixa o "X" grande */
     cursor: pointer;            /* Mãozinha ao passar o mouse */
