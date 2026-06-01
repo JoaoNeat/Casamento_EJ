@@ -1,100 +1,168 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS DA PÁGINA (BODY)
+   ========================================================================== */
 body {
-    background-color: #67061d;
+    /* Define as duas imagens de fundo (uma para o lado esquerdo e outra para o direito) */
+    background-image: url('lateral-esquerda.png'), url('lateral-direita.png');
+    
+    /* Alinha a primeira imagem na esquerda e a segunda na direita (ambas centralizadas verticalmente) */
+    background-position: left center, right center;
+    
+    /* Garante que as imagens não vão se repetir pela tela inteira */
+    background-repeat: no-repeat, no-repeat;
+    
+    /* Define o tamanho das imagens nas laterais (150px de largura; a altura se ajusta automaticamente) */
+    background-size: 150px auto, 150px auto;
+    
+    /* Efeito "Parallax": fixa as imagens de fundo na tela para que elas não subam ao rolar a página */
+    background-attachment: fixed, fixed;
+    
+    /* Cor de fundo padrão (azul bem escuro/quase preto) que aparece no centro, onde não há imagens */
+    background-color: #0b0d17; 
+    
+    /* Cor padrão do texto (Amarelo Ouro) */
     color: #ffd700;
+    
+    /* Fonte do site (usa 'Segoe UI' se o usuário tiver, se não, usa qualquer fonte sem serifa do sistema) */
     font-family: 'Segoe UI', sans-serif;
+    
+    /* Centraliza todos os textos que estiverem soltos na página */
     text-align: center;
+    
+    /* Espaçamento interno de 20px nas bordas do site para o conteúdo não colar no topo/rodapé */
     padding: 20px;
 }
 
-.container { max-width: 600px; margin: auto; }
+/* ==========================================================================
+   CONTAINER PRINCIPAL
+   ========================================================================== */
+.container { 
+    max-width: 600px; /* Impede que o conteúdo do site fique mais largo que 600px */
+    margin: auto;     /* Centraliza o bloco inteiro do container no meio da tela */
+}
 
-/* Estilo do Card (Presentes e Player) */
+/* ==========================================================================
+   ESTILO DOS CARDS (Presentes e Player de Música)
+   ========================================================================== */
 .presente, .player-container {
-    border: 2px solid #ffd700;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+    border: 2px solid #ffd700;                /* Borda amarela fina ao redor do card */
+    padding: 20px;                            /* Espaço interno entre a borda e o conteúdo */
+    margin-bottom: 25px;                      /* Espaço vazio abaixo de cada card */
+    border-radius: 15px;                      /* Deixa as pontas do card arredondadas */
+    background: rgba(255, 255, 255, 0.05);    /* Fundo branco com 95% de transparência (efeito vidro) */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.1); /* Brilho amarelo bem suave ao redor do card */
 }
 
+/* Ajuste específico para o Player de Música */
 .player-container {
-    max-width: 500px;
-    margin: 30px auto; /* Afastado de tudo */
+    max-width: 500px;    /* O player é ligeiramente mais estreito que os outros cards */
+    margin: 30px auto;   /* Afasta o player dos elementos de cima e de baixo e centraliza */
 }
 
-img { width: 100%; border-radius: 10px; margin-bottom: 10px; }
+/* Configuração geral para qualquer imagem colocada no site */
+img { 
+    width: 100%;          /* A imagem sempre vai ocupar 100% da largura do card onde estiver */
+    border-radius: 10px;  /* Arredonda os cantos da imagem */
+    margin-bottom: 10px;  /* Cria um espaço abaixo da imagem */
+}
 
+/* ==========================================================================
+   BOTÕES (Interação)
+   ========================================================================== */
 button {
-    background-color: #ffd700;
-    border: none;
-    padding: 12px 25px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: 0.3s;
+    background-color: #ffd700; /* Cor de fundo amarela */
+    border: none;              /* Remove a borda padrão feia do navegador */
+    padding: 12px 25px;        /* Espaçamento interno (tamanho do botão) */
+    font-weight: bold;         /* Texto em negrito */
+    cursor: pointer;           /* Transforma a seta do mouse na "mãozinha" de clique */
+    border-radius: 5px;        /* Arredonda levemente os cantos do botão */
+    font-size: 16px;           /* Tamanho do texto */
+    transition: 0.3s;          /* Deixa qualquer efeito de animação suave (leva 0.3 segundos) */
 }
 
-button:hover { background-color: #e6c200; transform: scale(1.05); }
+/* Efeito ao passar o mouse por cima do botão */
+button:hover { 
+    background-color: #e6c200; /* Escurece levemente o tom do amarelo */
+    transform: scale(1.05);    /* Aumenta o tamanho do botão em 5% (efeito de foco) */
+}
 
-/* Estilo do Modal */
+/* ==========================================================================
+   ESTILO DO MODAL (Janela Pop-up)
+   ========================================================================== */
+/* Fundo escuro que cobre a tela inteira quando o modal abre */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
+    display: none;             /* Por padrão, a janela começa escondida */
+    position: fixed;           /* Fixa a janela na tela, mesmo se o usuário rolar a página */
+    z-index: 1000;             /* Garante que o modal vai ficar na frente de QUALQUER outro elemento */
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.85);
+    width: 100%;               /* Ocupa toda a largura da tela */
+    height: 100%;              /* Ocupa toda a altura da tela */
+    background-color: rgba(0,0,0,0.85); /* Fundo preto com 85% de opacidade (escurece o site atrás) */
 }
 
+/* Caixa de conteúdo branca/escura que fica flutuando no meio */
 .modal-conteudo {
-    background-color: #0b0d17;
-    margin: 15% auto;
-    padding: 30px;
-    border: 2px solid #ffd700;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 15px;
-    text-align: center;
-    color: #ffd700;
+    background-color: #0b0d17;  /* Fundo escuro igual ao do site */
+    margin: 15% auto;           /* Empurra a caixa para baixo e centraliza nas laterais */
+    padding: 30px;              /* Espaço interno para respirar o texto */
+    border: 2px solid #ffd700;  /* Borda amarela */
+    width: 80%;                 /* Largura adaptável para celulares */
+    max-width: 400px;           /* Não passa de 400px em telas grandes */
+    border-radius: 15px;        /* Cantos arredondados */
+    text-align: center;         /* Centraliza o texto interno */
+    color: #ffd700;             /* Texto em amarelo */
 }
 
+/* Botão de fechar (o "X") do modal */
 .fechar {
-    color: #ffd700;
-    float: right;
-    font-size: 28px;
-    cursor: pointer;
-}
-/* Container que cria a profundidade 3D */
-.star-wars-container {
-    height: 250px; /* Altura da janela do crawl */
-    perspective: 500px; /* Define o ponto de fuga (o quanto o texto "inclina") */
-    overflow: hidden;
-    background: #0b0d17;
-    margin: 20px auto;
-    border: 2px solid #ffd700;
-    border-radius: 15px;
-    position: relative;
+    color: #ffd700;             /* "X" em amarelo */
+    float: right;               /* Joga o "X" para o canto superior direito da caixinha */
+    font-size: 28px;            /* Deixa o "X" grande */
+    cursor: pointer;            /* Mãozinha ao passar o mouse */
 }
 
-/* O texto que sobe */
+/* ==========================================================================
+   EFEITO STAR WARS (Texto Subindo em Perspectiva)
+   ========================================================================== */
+/* Janela/Moldura por onde o texto vai passar */
+.star-wars-container {
+    height: 250px;              /* Altura limite da janela de visualização */
+    perspective: 500px;         /* Cria o efeito 3D (quanto menor o número, mais inclinado o texto fica) */
+    overflow: hidden;           /* Esconde o texto que sair para fora dessa caixinha de 250px */
+    background: #0b0d17;        /* Fundo escuro interno */
+    margin: 20px auto;          /* Espaçamento externo e centralização */
+    border: 2px solid #ffd700;  /* Borda amarela */
+    border-radius: 15px;        /* Cantos arredondados */
+    position: relative;         /* Necessário para que o posicionamento do texto funcione corretamente */
+}
+
+/* O bloco de texto propriamente dito que vai subir */
 .crawl-text {
-    color: #ffd700;
+    color: #ffd700;             /* Texto amarelo clássico do filme */
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     position: relative;
-    top: 100%; /* Começa fora da tela, embaixo */
-    transform-origin: 50% 100%;
-    transform: rotateX(20deg) translateY(0);
-    animation: crawl 30s linear infinite; /* Tempo do scroll */
+    top: 100%;                  /* Força o texto a começar lá embaixo, totalmente escondido */
+    transform-origin: 50% 100%; /* Define que a base do efeito 3D é na parte inferior */
+    
+    /* Aplica a inclinação 3D de 20 graus e inicia no ponto zero da animação */
+    transform: rotateX(20deg) translateY(0); 
+    
+    /* Ativa a animação chamada 'crawl', que dura 30 segundos, é contínua (linear) e infinita */
+    animation: crawl 30s linear infinite; 
     padding: 20px;
 }
 
+/* Configura os passos da animação do texto subindo */
 @keyframes crawl {
-    0% { transform: rotateX(20deg) translateY(0); }
-    100% { transform: rotateX(20deg) translateY(-100%); }
+    0% { 
+        /* Estado inicial: texto inclinado começando na base da caixinha */
+        transform: rotateX(20deg) translateY(0); 
+    }
+    100% { 
+        /* Estado final: texto mantém a inclinação mas sobe -100% do seu próprio tamanho (desaparecendo no topo) */
+        transform: rotateX(20deg) translateY(-100%); 
+    }
 }
