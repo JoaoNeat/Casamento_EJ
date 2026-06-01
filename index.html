@@ -1,1 +1,159 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliança Lopes - Lista de Presentes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Família Lopes: Episódio I</h1>
+        <p>O Casamento</p>
+        
+        <div class="player-container">
+            <p>Trilha Sonora da Aventura:</p>
+            <audio controls>
+                <source src="music/tema.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
+
+       <div class="star-wars-container">
+    <div class="crawl-text">
+        <h2>Nossa História</h2>
+        <p>Em uma galáxia não tão distante...</p>
+        <p>Dois corações se encontraram. O amor cresceu e a aventura começou.</p>
+        <p>E então nasceu nossa maior missão: A Princesa Sofia.</p>
+        <p>Agora, a Família Lopes inicia oficialmente sua jornada como uma aliança intergaláctica!</p>
+        <br>
+        <p>Prepare-se para contribuir com a missão!</p>
+    </div>
+</div>
+
+        <h2>Lista oficial de presentes: Escolha sua missão!</h2>
+        
+        <div class="presente">
+            <img src="images/Duelo.png" alt="Duelo Espacial">
+            <h3>Duelo Espacial Com o noivo</h3>
+            <p>Nem sou de Briga mas bora lá.</p>
+            <button onclick="abrirModal('Duelo Espacial', 'R$ 350,00', '00020126360014BR.GOV.BCB.PIX0114+55419954051465204000053039865406350.005802BR5924Eveline Cristina Batista6009SAO PAULO62140510yUSSM5etFW6304CDB1')">Ver detalhes e Valor</button>
+        </div>
+
+        <div class="presente">
+            <img src="images/tributo.png" alt="Tributo">
+            <h3>Tributo Oficial a Princesa Sofia</h3>
+            <p>Comandante Suprema da galaxia (lá em casa...)</p>
+            <button onclick="abrirModal('Tributo', 'R$ 800,00', '00020126360014BR.GOV.BCB.PIX0114+55419954051465204000053039865406800.005802BR5924Eveline Cristina Batista6009SAO PAULO62140510q2oyKgkDYW6304346E')">Ver detalhes e Valor</button>
+        </div>
+
+        <div class="presente">
+            <img src="images/Foguete.png" alt="Foguete">
+            <h3>Combustível da Lua de Mel</h3>
+            <p>Destino: Romance Interplanetário, vamos de astrão.</p>
+            <button onclick="abrirModal('Combustível', 'R$ 200,00', '00020126360014BR.GOV.BCB.PIX0114+55419954051465204000053039865406200.005802BR5924Eveline Cristina Batista6009SAO PAULO62140510OIh7is1ns463048135')">Ver detalhes e Valor</button>
+        </div>
+
+        <div class="presente">
+            <img src="images/Sofa.png" alt="Sofá">
+            <h3>Sofá para Maratonas Galácticas</h3>
+            <p>Sessões épicas aprovadas pela Princesa Sofia</p>
+            <button onclick="abrirModal('Sofá', 'R$ 500,00', '00020126360014BR.GOV.BCB.PIX0114+55419954051465204000053039865406500.005802BR5924Eveline Cristina Batista6009SAO PAULO62140510IRBmvLXzGF63043D83')">Ver detalhes e Valor</button>
+        </div>
+
+        <div class="presente">
+            <img src="images/Mercado.png" alt="Mercado">
+            <h3>Mercado da Base Rebelde</h3>
+            <p>Porque o amor é lindo mas o mercado é caro</p>
+            <button onclick="abrirModal('Dinheiro para Mercado', 'R$ 850,00', '00020126360014BR.GOV.BCB.PIX0114+55419954051465204000053039865406850.005802BR5924Eveline Cristina Batista6009SAO PAULO62140510mMD0cjhuxB63045C9A')">Ver detalhes e Valor</button>
+        </div>
+
+        <div class="presente">
+            <img src="images/Tijolo.png" alt="Tijolo">
+            <h3>Tijolinho da Fortaleza interplanetária</h3>
+            <p>Para construir nosso império com carinho</p>
+            <button onclick="abrirModal('Tijolinho', 'R$ 150,00', '00020126360014BR.GOV.BCB.PIX0114+55419954051465204000053039865406150.005802BR5924Eveline Cristina Batista6009SAO PAULO62140510te4naBfzQF630440C3')">Ver detalhes e Valor</button>
+        </div>
+
+        <div class="presente">
+            <img src="images/pix.png" alt="Pix">
+            <h3>Pix da Força</h3>
+            <p>Uma força poderosa hoje em dia</p>
+            <button onclick="abrirModal('Super Pix da Força', 'R$ 750,00', '00020126360014BR.GOV.BCB.PIX0114+55419954051465204000053039865406750.005802BR5924Eveline Cristina Batista6009SAO PAULO62140510BDbs5XoLGR6304A185')">Ver detalhes e Valor</button>
+        </div>
+
+        <div class="presente">
+            <img src="images/endor.png" alt="Endor">
+            <h3>Viagem para Lua de Endor</h3>
+            <p>Passeio romântico na Floresta, Zero Criaturas perigosas (não garantido)</p>
+            <button onclick="abrirModal('A Viagem!', 'R$ 650,00', '00020126360014BR.GOV.BCB.PIX0114+55419954051465204000053039865406650.005802BR5924Eveline Cristina Batista6009SAO PAULO62140510K7i25odzMh6304495F')">Ver detalhes e Valor</button>
+        </div>
+
+        <div class="presente">
+            <img src="images/Podrace.jpeg" alt="Podrace">
+            <h3>Corrida de Pods</h3>
+            <p>Alta velocidade na Orla Exterior.</p>
+            <button onclick="abrirModal('Corrida de Pods', 'R$ 470,00', '00020126360014BR.GOV.BCB.PIX0114+55419954051465204000053039865406470.005802BR5924Eveline Cristina Batista6009SAO PAULO62140510K5mFT5XIvt6304522A')">Ver detalhes e Valor</button>
+        </div>
+
+        <div class="presente">
+            <img src="images/sabre.png" alt="Sabre">
+            <h3>Par de Sabres de Luz</h3>
+            <p>Proteção Oficial de Princesa Sofia, armas certificadas contra monstros do quarto</p>
+            <button onclick="abrirModal('Par de Sabres', 'R$ 1000,00', '00020126360014BR.GOV.BCB.PIX0114+554199540514652040000530398654071000.005802BR5924Eveline Cristina Batista6009SAO PAULO62140510BTAv2hbo6M6304BBF1')">Ver detalhes e Valor</button>
+        </div>
+
+       <div class="star-wars-container">
+    <div class="crawl-text">
+        <h2>Nosso agradecimento</h2>
+        <p>Desde já queremos agradecer</p>
+        <p>A você que faz parte da nossa aventura</p>
+        <p>Se esta vendo isso é porque nós temos um carinho especial por ti</p>
+        <p>Que Deus te abençoe e Obrigado por fazer parte das nossas vidas</p>
+        <br>
+        <br>
+        <p>E que a força esteja com Você!</p>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
+
+    </div> <script>
+        let valorAtual = "";
+        let pixAtual = ""; 
+
+        function abrirModal(nome, valor, pix) {
+            document.getElementById("modal-titulo").innerText = nome;
+            document.getElementById("modal-valor").innerText = valor;
+            valorAtual = valor; 
+            pixAtual = pix; 
+            document.getElementById("modal-presente").style.display = "block";
+        }
+
+        function fecharModal() {
+            document.getElementById("modal-presente").style.display = "none";
+        }
+
+        function copiarPixModal() {
+            navigator.clipboard.writeText(pixAtual);
+            alert("Chave PIX copiada! Valor sugerido: " + valorAtual + ". Obrigado!");
+            fecharModal();
+        }
+    </script>
+   
+    <div id="modal-presente" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <h2 id="modal-titulo">Título</h2>
+            <p id="modal-valor" style="font-size: 1.5em; color: #ffd700; margin: 15px 0;"></p>
+            <p>Ao confirmar, a chave PIX será copiada automaticamente.</p>
+            <button onclick="copiarPixModal()">Copiar PIX e Confirmar</button>
+        </div>
+    </div>
+
+</body>
+</html>
