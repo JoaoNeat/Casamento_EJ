@@ -151,7 +151,7 @@ button:hover {
     transform: rotateX(20deg) translateY(0); 
     
     /* Ativa a animação chamada 'crawl', que dura 30 segundos, é contínua (linear) e infinita */
-    animation: crawl 18s linear infinite; 
+    animation: crawl 25s linear infinite; 
     padding: 20px;
 }
 
